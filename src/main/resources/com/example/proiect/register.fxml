@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.ControllerRegister">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="numeTextField" layoutX="155.0" layoutY="116.0" promptText="Nume" />
+            <TextField fx:id="prenumeTextField" layoutX="155.0" layoutY="159.0" promptText="Prenume" />
+            <TextField fx:id="usernameTextField" layoutX="155.0" layoutY="201.0" promptText="username" />
+            <Label layoutX="78.0" layoutY="120.0" prefHeight="17.0" prefWidth="56.0" text="Nume" />
+            <Label layoutX="78.0" layoutY="163.0" text="Prenume" />
+            <Label layoutX="78.0" layoutY="205.0" text="Username" />
+            <Label layoutX="78.0" layoutY="244.0" text="Parolă" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="155.0" layoutY="240.0" promptText="parola" />
+            <Button fx:id="createAccountButton" layoutX="165.0" layoutY="304.0" mnemonicParsing="false" onAction="#registerButtonOnAction" text="Creează cont" />
+            <Button fx:id="backButtone" layoutX="37.0" layoutY="36.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="77.0" prefWidth="415.0" style="-fx-background-color: #223F;" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
