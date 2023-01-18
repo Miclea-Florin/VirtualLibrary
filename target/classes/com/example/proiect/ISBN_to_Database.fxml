@@ -14,12 +14,12 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: 000000;" styleClass="adauga" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.ControllerISBN">
    <children>
-      <Button layoutX="48.0" layoutY="155.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: 00000000000; -fx-border-color: rgba(0, 0, 0, 0.5); -fx-border-radius: 6; -fx-font-weight: 700; -fx-border-width: 2;" text="Home">
+      <Button fx:id="UseriButton" layoutX="48.0" layoutY="155.0" mnemonicParsing="false" onAction="#UseriButtonOnAction" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: 00000000000; -fx-border-color: rgba(0, 0, 0, 0.5); -fx-border-radius: 6; -fx-font-weight: 700; -fx-border-width: 2;" text="Useri">
          <padding>
             <Insets bottom="6.0" left="25.0" right="25.0" top="6.0" />
          </padding>
          <font>
-            <Font size="16.0" />
+            <Font size="15.0" />
          </font></Button>
       <Button fx:id="adaugareButton" layoutX="367.0" layoutY="248.0" mnemonicParsing="false" onAction="#addBook_toDB" prefHeight="43.0" prefWidth="112.0" style="-fx-background-color: #0283FD; -fx-border-radius: 6; -fx-border-width: 2; -fx-background-radius: 10; -fx-font-weight: 700;" text="Adauga!" textFill="WHITE">
          <effect>

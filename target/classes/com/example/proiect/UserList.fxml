@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="657.0" style="-fx-background-color: 000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.UserListController">
+   <children>
+      <TableView fx:id="CarteTableView" layoutX="175.0" layoutY="83.0" prefHeight="268.0" prefWidth="446.0" style="-fx-background-color: transparent; -fx-border-radius: 3; -fx-border-width: 0; -fx-border-color: black; -fx-background-repeat: 0;">
+        <columns>
+          <TableColumn fx:id="IDTableColumn" prefWidth="31.19998264312744" style="color: white;" text="ID" />
+          <TableColumn fx:id="PrenumeTableColumn" prefWidth="209.0" text="Prenume" />
+            <TableColumn fx:id="NumeTableColumn" prefWidth="83.0" text="Nume" />
+            <TableColumn fx:id="UsernameTableColumn" prefWidth="121.0" text="username" />
+        </columns>
+      </TableView>
+      <Label layoutX="107.0" layoutY="38.0" text="Căutare">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="keywordTextField" layoutX="183.0" layoutY="38.0" prefHeight="29.0" prefWidth="446.0" promptText="Cuvinte cheie.." style="-fx-border-width: 2; -fx-border-color: rgba(0,0,0,0.7); -fx-background-color: rgb(255,255,255); -fx-border-radius: 6;" />
+      <Button fx:id="BackButton" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#BackButtonOnAction" style="-fx-background-color: #0283FD; -fx-background-radius: 10; -fx-border-radius: 6; -fx-border-width: 2; -fx-font-weight: 700;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" spread="0.18">
+               <color>
+                  <Color red="0.0117647061124444" green="0.5176470875740051" blue="0.9882352948188782" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="DeleteButton" layoutX="38.0" layoutY="262.0" mnemonicParsing="false" onAction="#DeleteButtonOnAction" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #0283FD; -fx-border-radius: 6; -fx-border-width: 2; -fx-background-radius: 10; -fx-font-weight: 700;" text="Șterge!" textFill="WHITE">
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" spread="0.18">
+               <color>
+                  <Color red="0.0117647061124444" green="0.5176470875740051" blue="0.9882352948188782" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="AdminButton" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" onAction="#AdminButtonOnAction" prefHeight="54.0" prefWidth="123.0" style="-fx-background-color: #0283FD; -fx-border-radius: 6; -fx-border-width: 2; -fx-background-radius: 10; -fx-font-weight: 700;" text="Adauga Admin" textFill="WHITE">
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" spread="0.18">
+               <color>
+                  <Color red="0.0117647061124444" green="0.5176470875740051" blue="0.9882352948188782" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

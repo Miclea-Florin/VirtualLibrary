@@ -2,6 +2,7 @@ package com.example.proiect;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -17,9 +18,14 @@ public class ControllerISBN {
 
     private Button CartiButton;
 
+    @FXML Button UseriButton;
     @FXML
     private TextField isbnTextField;
 
+    public void UseriButtonOnAction(ActionEvent e) throws IOException {
+        SceneController.switchToUserList(e);
+
+    }
 
     public void addBook_toDB(Carte c){
         DatabaseConnection connectNow = new DatabaseConnection();
