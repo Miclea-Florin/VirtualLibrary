@@ -44,7 +44,7 @@ public class ControllerRegister {
         Connection connectDB = connectNow.getConnection();
 
 
-        String q = "insert into useraccounts(Firstname,Lastname,Username,Password) values ('"+prenumeTextField.getText()+"','"+numeTextField.getText()+"','" +  usernameTextField.getText()+"','"+ passwordPasswordField.getText()+"')";
+        String q = "insert into normaluseraccounts(Firstname,Lastname,Username,Password) values ('"+prenumeTextField.getText()+"','"+numeTextField.getText()+"','" +  usernameTextField.getText()+"','"+ passwordPasswordField.getText()+"')";
         //System.out.println(q);
 
         try{
@@ -57,7 +57,6 @@ public class ControllerRegister {
 
     }
 
-    //TODO add back button
 
 
     public void backButtonOnAction(ActionEvent e) throws IOException {

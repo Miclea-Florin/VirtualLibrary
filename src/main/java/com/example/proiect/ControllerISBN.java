@@ -15,7 +15,7 @@ public class ControllerISBN {
     @FXML
     private Button logoutButton;
 
-
+    private Button CartiButton;
 
     @FXML
     private TextField isbnTextField;
@@ -42,7 +42,10 @@ public class ControllerISBN {
 
     }
 
+    public void CartiButtonOnAction(ActionEvent e) throws  IOException{
+        SceneController.switchToAdminBooks(e);
 
+    }
 
     public void addBook_toDB(ActionEvent event) throws IOException {
 

@@ -4,27 +4,54 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.ControllerRegister">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="numeTextField" layoutX="155.0" layoutY="116.0" promptText="Nume" />
-            <TextField fx:id="prenumeTextField" layoutX="155.0" layoutY="159.0" promptText="Prenume" />
-            <TextField fx:id="usernameTextField" layoutX="155.0" layoutY="201.0" promptText="username" />
-            <Label layoutX="78.0" layoutY="120.0" prefHeight="17.0" prefWidth="56.0" text="Nume" />
-            <Label layoutX="78.0" layoutY="163.0" text="Prenume" />
-            <Label layoutX="78.0" layoutY="205.0" text="Username" />
-            <Label layoutX="78.0" layoutY="244.0" text="Parolă" />
-            <PasswordField fx:id="passwordPasswordField" layoutX="155.0" layoutY="240.0" promptText="parola" />
-            <Button fx:id="createAccountButton" layoutX="165.0" layoutY="304.0" mnemonicParsing="false" onAction="#registerButtonOnAction" text="Creează cont" />
-            <Button fx:id="backButtone" layoutX="37.0" layoutY="36.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+            <TextField fx:id="numeTextField" layoutX="143.0" layoutY="144.0" promptText="Nume" />
+            <TextField fx:id="prenumeTextField" layoutX="143.0" layoutY="194.0" promptText="Prenume" />
+            <TextField fx:id="usernameTextField" layoutX="143.0" layoutY="243.0" promptText="username" />
+            <Label layoutX="91.0" layoutY="148.0" prefHeight="17.0" prefWidth="56.0" text="Nume" />
+            <Label layoutX="81.0" layoutY="198.0" text="Prenume" />
+            <Label layoutX="75.0" layoutY="247.0" text="Username" />
+            <Label layoutX="88.0" layoutY="291.0" text="Parolă" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="143.0" layoutY="287.0" promptText="parola" />
+            <Button fx:id="createAccountButton" layoutX="128.0" layoutY="340.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #0283FD; -fx-border-radius: 6; -fx-border-width: 2; -fx-background-radius: 10; -fx-font-weight: 700;" text="Creează cont" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17">
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5333333611488342" blue="0.9803921580314636" opacity="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="backButtone" layoutX="21.0" layoutY="492.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="45.0" prefWidth="84.0" style="-fx-background-color: #0283FD; -fx-background-radius: 6; -fx-border-width: 2; -fx-background-radius: 10; -fx-font-weight: 700;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetX="5.0" offsetY="5.0" spread="0.17">
+                     <color>
+                        <Color red="0.029400000348687172" green="0.5522300004959106" blue="0.9800000190734863" opacity="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <ImageView fitHeight="55.0" fitWidth="249.0" layoutX="83.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Group_20.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </center>
-   <top>
-      <AnchorPane prefHeight="77.0" prefWidth="415.0" style="-fx-background-color: #223F;" BorderPane.alignment="CENTER" />
-   </top>
 </BorderPane>

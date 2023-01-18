@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" style="-fx-background-color: 000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.AdminBookController">
+   <children>
+      <TableView fx:id="CarteTableView" layoutX="122.0" layoutY="115.0" prefHeight="370.0" prefWidth="841.0" style="-fx-background-color: transparent; -fx-border-radius: 3; -fx-border-width: 0; -fx-border-color: black; -fx-background-repeat: 0;">
+        <columns>
+          <TableColumn fx:id="CarteIDTableColumn" prefWidth="31.19998264312744" style="color: white;" text="ID" />
+          <TableColumn fx:id="CarteTitluTableColumn" prefWidth="209.0" text="Titlu" />
+            <TableColumn fx:id="CarteEdituraTableColumn" prefWidth="83.0" text="Editura" />
+            <TableColumn fx:id="CarteAutoriTableColumn" prefWidth="100.0" text="Autori" />
+            <TableColumn fx:id="CarteAnTableColumn" prefWidth="62.0" text="An" />
+            <TableColumn fx:id="CarteISBNTableColumn" prefWidth="109.0" text="ISBN" />
+            <TableColumn fx:id="CarteLimbaTableColumn" minWidth="0.0" prefWidth="130.0" text="Limba" />
+            <TableColumn fx:id="CartePaginiTableColumn" prefWidth="69.0" text="Pagini" />
+            <TableColumn fx:id="CarteRatingTableColumn" minWidth="0.0" prefWidth="46.0" text="Rating" />
+        </columns>
+      </TableView>
+      <Label layoutX="100.0" layoutY="72.0" text="Căutare">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="keywordTextField" layoutX="169.0" layoutY="72.0" prefHeight="25.0" prefWidth="795.0" promptText="Cuvinte cheie.." style="-fx-border-width: 2; -fx-border-color: rgba(0,0,0,0.7); -fx-background-color: rgb(255,255,255); -fx-border-radius: 6;" />
+      <Button fx:id="BackButton" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#BackButtonOnAction" style="-fx-background-color: #0283FD; -fx-background-radius: 10; -fx-border-radius: 6; -fx-border-width: 2; -fx-font-weight: 700;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" spread="0.18">
+               <color>
+                  <Color red="0.0117647061124444" green="0.5176470875740051" blue="0.9882352948188782" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="DeleteButton" layoutX="460.0" layoutY="512.0" mnemonicParsing="false" onAction="#DeleteButtonOnAction" prefHeight="45.0" prefWidth="147.0" style="-fx-background-color: #0283FD; -fx-border-radius: 6; -fx-border-width: 2; -fx-background-radius: 10; -fx-font-weight: 700;" text="Șterge!" textFill="WHITE">
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" spread="0.18">
+               <color>
+                  <Color red="0.0117647061124444" green="0.5176470875740051" blue="0.9882352948188782" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+   </children>
+</Pane>

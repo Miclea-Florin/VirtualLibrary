@@ -25,7 +25,7 @@
          <effect>
             <DropShadow offsetX="5.0" offsetY="5.0" spread="0.18">
                <color>
-                  <Color red="0.00989999994635582" green="0.5162850022315979" blue="0.9900000095367432" opacity="0.5992366671562195" />
+                  <Color red="0.0117647061124444" green="0.5176470875740051" blue="0.9882352948188782" opacity="0.6000000238418579" />
                </color>
             </DropShadow>
          </effect>
@@ -47,7 +47,7 @@
          </font>
       </Label>
       <Line endX="100.0" layoutX="252.0" layoutY="213.0" rotate="90.0" startX="-200.0" stroke="#000000b2" />
-      <Button layoutX="48.0" layoutY="215.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: 00000000000; -fx-border-color: rgba(0, 0, 0, 0.5); -fx-border-radius: 6; -fx-font-weight: 700; -fx-border-width: 2;" text="Home">
+      <Button fx:id="CartiButton" layoutX="48.0" layoutY="215.0" mnemonicParsing="false" onAction="#CartiButtonOnAction" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: 00000000000; -fx-border-color: rgba(0, 0, 0, 0.5); -fx-border-radius: 6; -fx-font-weight: 700; -fx-border-width: 2;" text="Cărți">
          <padding>
             <Insets bottom="6.0" left="25.0" right="25.0" top="6.0" />
          </padding>

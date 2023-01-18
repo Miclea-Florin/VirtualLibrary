@@ -24,6 +24,10 @@
                   <Image url="@icon-book_1.png" />
                </image>
             </ImageView>
+            <Button fx:id="GuestButton" layoutX="85.0" layoutY="342.0" mnemonicParsing="false" onAction="#GuestButtonOnAction" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: white;" text="Guest">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
          </children>
       </AnchorPane>
    </left>
@@ -47,10 +51,11 @@
                </font>
             </Label>
             <TextField fx:id="usernameTextField" layoutX="105.0" layoutY="139.0" promptText="Username" />
-            <Button fx:id="loginButton" layoutX="40.0" layoutY="221.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="213.0" style="-fx-background-color: #263f73;" text="Log in" textFill="WHITE" />
-            <Button fx:id="exitButton" layoutX="98.0" layoutY="333.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="0.0" prefWidth="109.0" style="-fx-background-color: #263f73;" text="Exit" textFill="WHITE" />
+            <Button fx:id="loginButton" layoutX="40.0" layoutY="274.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="213.0" style="-fx-background-color: #263f73;" text="Log in (Admin)" textFill="WHITE" />
+            <Button fx:id="exitButton" layoutX="92.0" layoutY="361.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="0.0" prefWidth="109.0" style="-fx-background-color: #263f73;" text="Exit" textFill="WHITE" />
             <Label fx:id="loginMessageLabel" layoutX="96.0" layoutY="102.0" prefHeight="18.0" prefWidth="102.0" textFill="RED" />
-            <Button fx:id="registerButton" layoutX="40.0" layoutY="265.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="30.0" prefWidth="213.0" style="-fx-background-color: #263f73;" text="Register" textFill="WHITE" />
+            <Button fx:id="registerButton" layoutX="41.0" layoutY="321.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="30.0" prefWidth="213.0" style="-fx-background-color: #263f73;" text="Register" textFill="WHITE" />
+            <Button fx:id="UserLoginButton" layoutX="40.0" layoutY="230.0" mnemonicParsing="false" onAction="#UserLoginButtonOnAction" prefHeight="30.0" prefWidth="213.0" style="-fx-background-color: #263f73;" text="Log in (User)" textFill="WHITE" />
          </children>
       </AnchorPane>
    </right>
